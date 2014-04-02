@@ -1,0 +1,123 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background: #0198DF;
+	color: white;
+	font-size: 18px;
+}
+#wrapper
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.94;
+}
+	#wrapper *
+	{
+		transition: all 0.3s;
+	}
+#background
+{
+	background: #0198DF;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -50;
+}
+	#foxtail
+	{
+		position: absolute;
+		background: url('img/foxtail.png');
+		height: 156px;
+		width: 156px;
+		bottom: 0px;
+		left: 0px;
+		margin: 10px 10px 10px 8px;
+		background-position: 0px 0px;
+	}
+form
+{
+}
+	form.disabled
+	{
+		display: none;
+	}
+	fieldset
+	{
+		border-radius: 5px;
+		border: 2px solid #11A8EF;
+		height: auto;
+		overflow: auto;
+		margin: 4px 0px 4px 0px;
+	}
+		fieldset legend
+		{
+			border-radius: 3px;
+			border: 2px solid #11A8EF;
+			background: #069DF5;
+		}
+		fieldset fieldset
+		{
+			margin: 8px 0px 8px 0px;
+		}
+
+table, input, select
+{
+	width: 100%;
+}
+input[type=text], input[type=number], select
+{
+	height: 24px;
+}
+.glow
+{
+	position: relative;
+	box-shadow: 0px 0px 4px 4px #0198DF;
+	z-index: 5;
+	margin: 0px -4px 0px -4px;
+}
+.button
+{
+	color: white;
+	background: linear-gradient(#43A6E2, #277AC1);
+	border: 0px;
+	border-radius: 0.25em;
+	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+	display: inline-block;
+	background-color: #277AC1;
+	line-height: 32px;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+	height: 32px;
+	font-size: 20px;
+	vertical-align: middle;
+	padding: 0px 12px 0px 12px;
+	margin: 4px;
+	width: auto;
+}
+	.button.buttonDisabled
+	{
+		opacity: 0.6;
+	}
+	.button
+	{
+		transition: all 0.3s;
+	}
+	.button:active
+	{
+		transform: skew(-8deg, -10deg);
+	}
+.dontForgetThis
+{
+	border: 2px solid red;
+	background: #FFD4D4;
+}

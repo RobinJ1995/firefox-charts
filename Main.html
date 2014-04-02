@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Charts</title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="Log.js"></script>
+	<script type="text/javascript" src="Chart.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!--<form id="step1">
+			<fieldset>
+				<legend>Columns</legend>
+				<table>
+					<tr>
+						<td><label for="column0">Subject: </label></td>
+						<td><input type="text" id="column0" placeholder="Activities" required /></td>
+					</tr>
+					<tr>
+						<td><label for="column1">Unit: </label></td>
+						<td><input type="text" id="column1" required placeholder="Hours" /></td>
+					</tr>
+				</table>
+			</fieldset>
+			<input type="submit" class="button" value="Next" />
+		</form>-->
+		<form id="step1">
+			<fieldset>
+				<legend>Data</legend>
+				<fieldset class="row" id="firstRow">
+					<table>
+						<tr>
+							<td><label>Subject: </label></td>
+							<td><input type="text" class="subject" required placeholder="Sleeping" /></td>
+						</tr>
+						<tr>
+							<td><label>Value: </label></td>
+							<td><input type="number" class="value" required placeholder="8" /></td>
+						</tr>
+					</table>
+				</fieldset>
+				<input type="button" class="button" id="btnAddField" value="Add field" />
+			</fieldset>
+			<input type="submit" class="button" value="Next" />
+		</form>
+		<form id="step2" class="disabled">
+			<fieldset>
+				<legend>Type</legend>
+				<select required>
+					<option value="pie">Pie</option>
+					<option value="3dPie">3D Pie</option>
+					<option value="column">Column</option>
+					<option value="bar">Bar</option>
+					<option value="gauge">Gauge</option>
+					<option value="line">Line</option>
+					<option value="area">Area</option>
+				</select>
+			</fieldset>
+			<input type="submit" class="button" value="Next" />
+		</form>
+		<form id="step3" class="disabled">
+			<div id="chart">
+			</div>
+		</form>
+		<div id="log">
+		</div>
+	</div>
+	<div id="background">
+		<div id="foxtail">
+		</div>
+	</div>
+</body>
+</html>

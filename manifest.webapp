@@ -1,0 +1,15 @@
+{
+  "name": "Charts",
+  "description": "Easy as pie.",
+  "version": "1.0.1",
+  "launch_path": "/Main.html",
+  "icons": {
+    "128": "/img/icon.png",
+	"64": "/img/icon_64px.png"
+  },
+  "developer": {
+    "name": "Robin Jacobs",
+    "url": "http://www.robinj.be/"
+  },
+  "default_locale": "en"
+}
